@@ -1,7 +1,6 @@
 streamlit==1.25.0
 pandas==2.2.2
 altair==5.0.1
-sqlite3==3.39.5  
 numpy==1.26.0
 st-aggrid==0.3.3  
 python-pptx
