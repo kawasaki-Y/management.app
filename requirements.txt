@@ -3,4 +3,3 @@ pandas==2.2.2
 altair==5.0.1
 numpy
 python-pptx
-st-aggrid
