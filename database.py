@@ -82,6 +82,7 @@ class Database:
 
     @staticmethod
     def execute_query(query, params=None):
+        """任意のSQLクエリを実行"""
         conn = sqlite3.connect(Database.DB_FILE)
         cursor = conn.cursor()
         try:
@@ -98,6 +99,7 @@ class Database:
 
     @staticmethod
     def fetch_data(query, params=None):
+        """データを取得するクエリを実行"""
         conn = sqlite3.connect(Database.DB_FILE)
         cursor = conn.cursor()
         try:
@@ -112,3 +114,8 @@ class Database:
             raise
         finally:
             conn.close()
+
+    @staticmethod
+    def get_connection():
+        """データベース接続を返す"""
+        return sqlite3.connect(Database.DB_FILE)

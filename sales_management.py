@@ -8,6 +8,11 @@ from pptx.util import Inches
 import os
 
 def save_chart_as_image(chart, filename):
+    """AltairのグラフをJSONとして保存"""
+    with open(filename, "w") as f:
+        f.write(chart.to_json())
+
+def save_chart_as_image(chart, filename):
     """Altairのグラフを画像として保存"""
     chart.save(filename, scale_factor=2)
 
