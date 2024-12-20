@@ -1,6 +1,6 @@
-streamlit==1.25.0
-pandas==2.2.2
-altair==5.0.1
+streamlit
+pandas
+altair
 numpy
 python-pptx
-pillow>=9.5.0
+pillow
