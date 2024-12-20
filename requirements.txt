@@ -3,3 +3,4 @@ pandas==2.2.2
 altair==5.0.1
 numpy
 python-pptx
+pillow==9.5.0
