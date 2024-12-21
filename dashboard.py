@@ -4,7 +4,7 @@ from cost_management import cost_management_page
 from sg_a_costs import sg_a_costs_page
 from profit_management import profit_management_page
 from cashflow_management import cashflow_management_page
-from tags_and_target import tags_and_target_page  # タグと目標売上登録をインポート
+from tags_and_target import tags_and_target_page  
 from database import Database
 
 # ページ設定
@@ -26,7 +26,7 @@ menu = st.sidebar.radio("ページを選択してください", [
 
 # ページ分岐
 if menu == "初期設定登録":
-    tags_and_target_page()  # タグと目標売上登録ページを表示
+    tags_and_target_page()  
 elif menu == "売上管理":
     sales_management_page()
 elif menu == "原価管理":

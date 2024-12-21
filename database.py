@@ -82,7 +82,7 @@ class Database:
 
     @staticmethod
     def execute_query(query, params=None):
-        """任意のSQLクエリを実行"""
+        """SQLクエリを実行"""
         conn = sqlite3.connect(Database.DB_FILE)
         cursor = conn.cursor()
         try:
